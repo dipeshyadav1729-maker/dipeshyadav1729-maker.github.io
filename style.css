@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+
+.hero {
+    height: 40vh;
+    background: url('IMG_20260501_104401.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(0,0,0,0.1); /* dark overlay */
+}
+
+
+
+.hero h1 {
+    color: #ff8e07e6;
+    font-size: 53px;
+    font-weight: bold;
+    letter-spacing: 1px;
+     text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+
+
+.hero p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+
+
+.hero button {
+    padding: 11px 23px;
+    background: orange;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    letter-spacing: 1px;
+}
+
+
+
+.hero button:hover {
+    transform: scale(1.08);
+    background: red;
+    color: white;
+}
+
+
+
+.product h2 {
+    color: orange;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.product p {
+    color: #ccc;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+.features ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+
+.features li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+
+.specs ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.specs li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+
+.g p {
+    margin-top: 10px;
+}
+.g {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.contact button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: orange;
+    border: none;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+
+.contact button:hover {
+    background: red;
+    color: white;
+    transform: scale(1.2);
+}
